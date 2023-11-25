@@ -22,7 +22,7 @@ let url = "http://www.apple.com/library/test/success.html"
 let proxy={
   "name": "🪜 代理",
   "type": "select",
-  "proxies":["🌏 全球直连","🛑 全球拦截","♻️ 自动选择","✅ 选择节点"]
+  "proxies":["♻️ 自动选择","🌏 全球直连","🛑 全球拦截","✅ 选择节点"]
 }
 
 //自动选择
@@ -75,13 +75,13 @@ let privateNetwork={
 let icloud={
   "name": "☁️ Icloud",
   "type": "select",
-  "proxies":["♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
+  "proxies":["🌏 全球直连","♻️ 自动选择","✅ 选择节点","🛑 全球拦截"]
 }
 //apple
 let apple={
   "name": "📱 Apple",
   "type": "select",
-  "proxies":["♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
+  "proxies":["🌏 全球直连","♻️ 自动选择","✅ 选择节点","🛑 全球拦截"]
 }
 //google
 let google={
