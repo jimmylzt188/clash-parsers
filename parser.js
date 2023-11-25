@@ -13,7 +13,10 @@ let rule_providers=""
 let rules=[]
 
 //切换时间 12小时
-let intervalTime = 43200
+let intervalTime = 300
+
+//测试延迟网址
+let url = "http://www.apple.com/library/test/success.html"
 
 //需要代理的
 let proxy={
@@ -26,7 +29,7 @@ let proxy={
 let automatic={
     "name": "♻️ 自动选择",
     "type": "url-test",
-    "url": "http://www.gstatic.com/generate_204",
+    "url": url,
     "interval": intervalTime,//更新周期
     "proxies":[]
 }
@@ -34,13 +37,13 @@ let automatic={
 let select={
     "name": "✅ 选择节点",
     "type": "select",
-    "proxies":["♻️ 自动选择"]
+    "proxies":["♻️ 自动选择","🈷️ 所有节点"]
 }
 //故障转移
 let fallback={
     "name": "🔯 故障转移",
     "type": "fallback",
-    "url": "http://www.gstatic.com/generate_204",
+    "url": url,
     "interval": 300,
     "proxies":[]
 }
@@ -152,9 +155,10 @@ module.exports.parse = async function(raw, {axios, yaml, notify,console},{ name,
             }
         }
         if(areaJson["name"]){
-            areaJson["type"]="select"
+            areaJson["type"]="url-test"
             areaJson["proxies"]=proxies;
             areaJson["interval"] = intervalTime;
+            areaJson["url"] = url;
             //放到yml中
             content['proxy-groups'].push(areaJson)
             //对几个预置的规则进行处理
