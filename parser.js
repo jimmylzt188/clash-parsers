@@ -24,7 +24,6 @@ let proxy={
   "type": "select",
   "proxies":["♻️ 自动选择","✅ 选择节点","🛑 全球拦截"]
 }
-
 //自动选择
 let automatic={
     "name": "♻️ 自动选择",
@@ -38,6 +37,12 @@ let select={
     "name": "✅ 选择节点",
     "type": "select",
     "proxies":["♻️ 自动选择","🈷️ 所有节点"]
+}
+//所有节点，方便测试连通
+let all={
+    "name": "🈷️ 所有节点",
+    "type": "select",
+    "proxies":[]
 }
 //故障转移
 let fallback={
@@ -58,12 +63,6 @@ let prevent={
     "name": "🛑 全球拦截",
     "type": "select",
     "proxies":["REJECT", "DIRECT"]
-}
-//所有节点，方便测试连通
-let all={
-    "name": "🈷️ 所有节点",
-    "type": "select",
-    "proxies":[]
 }
 //私有网络
 let privateNetwork={
