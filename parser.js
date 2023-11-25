@@ -51,7 +51,7 @@ let fallback={
 let direct={
     "name": "🌏 全球直连",
     "type": "select",
-    "proxies":["DIRECT","✅ 选择节点","♻️ 自动选择"]
+    "proxies":["DIRECT","🪜 代理","✅ 选择节点","♻️ 自动选择"]
 }
 //阻止链接
 let prevent={
@@ -69,50 +69,50 @@ let all={
 let privateNetwork={
   "name": "⛓️ 私有网络",
   "type": "select",
-  "proxies":["🌏 全球直连","🛑 全球拦截","♻️ 自动选择","✅ 选择节点"]
+  "proxies":["DIRECT","🌏 全球直连","♻️ 自动选择","✅ 选择节点","🛑 全球拦截"]
 }
 //icloud
 let icloud={
   "name": "☁️ Icloud",
   "type": "select",
-  "proxies":["🌏 全球直连","♻️ 自动选择","✅ 选择节点","🛑 全球拦截"]
+  "proxies":["🪜 代理","♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
 }
 //apple
 let apple={
   "name": "📱 Apple",
   "type": "select",
-  "proxies":["🌏 全球直连","♻️ 自动选择","✅ 选择节点","🛑 全球拦截"]
+  "proxies":["🪜 代理","♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
 }
 //google
 let google={
   "name": "📫 Google",
   "type": "select",
-  "proxies":["♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
+  "proxies":["🪜 代理","♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
 }
 
 //telegram
 let telegram={
   "name": "📲 Telegram",
   "type": "select",
-  "proxies":["♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
+  "proxies":["🪜 代理","♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
 }
 //youtube
 let youtube={
   "name": "📺 Youtube",
   "type": "select",
-  "proxies":["♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
+  "proxies":["🪜 代理","♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
 }
 //微软
 let microsoft={
   "name": "Ⓜ️ 微软服务",
   "type": "select",
-  "proxies":["♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
+  "proxies":["🪜 代理","♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
 }
 //其他没命中的
 let others={
   "name": "🐟 未命中规则",
   "type": "select",
-  "proxies":["🌏 全球直连","🛑 全球拦截","♻️ 自动选择","✅ 选择节点"]
+  "proxies":["🪜 代理","♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
 }
 
 //内置代理规则
