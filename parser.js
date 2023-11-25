@@ -116,7 +116,7 @@ let others={
 
 //内置代理规则
 let builtInProxyGroups=[
-  proxy,automatic,select,fallback,direct,prevent,all,privateNetwork,icloud,apple,google,telegram,youtube,microsoft,others
+  proxy,automatic,select,all,fallback,direct,prevent,privateNetwork,icloud,apple,google,telegram,youtube,microsoft,others
 ]
 
 
