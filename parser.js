@@ -12,7 +12,7 @@ let rule_providers=""
  */
 let rules=[]
 
-//切换时间 12小时
+//切换时间 3秒
 let intervalTime = 300
 
 //测试延迟网址
