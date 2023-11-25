@@ -36,7 +36,7 @@ let automatic={
 let select={
     "name": "✅ 选择节点",
     "type": "select",
-    "proxies":["♻️ 自动选择","🈷️ 所有节点"]
+    "proxies":["🈷️ 所有节点"]
 }
 //所有节点，方便测试连通
 let all={
