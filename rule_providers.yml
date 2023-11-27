@@ -26,9 +26,7 @@ rule-providers:
     proxy:
       type: http
       behavior: domain
-      url: 
-      - https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt
-      - https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt
+      url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt
       path: ./ruleset/proxy.yaml
       interval: 86400
     direct:
