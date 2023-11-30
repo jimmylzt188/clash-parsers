@@ -199,7 +199,7 @@ module.exports.parse = async function(raw, {axios, yaml, notify,console},{ name,
       console.log("rule_providers错误",error);
     });
 
-    await axios.get("https://gitee.com/jimmylzt/clash-parsers/raw/main/rules.json").then(function (response){
+    await axios.get("https://raw.githubusercontent.com/jimmylzt188/clash-parsers/main/rules.json").then(function (response){
       rules=response.data;
     }).catch(function(error){
       notify("错误",error)
