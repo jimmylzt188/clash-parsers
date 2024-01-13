@@ -16,7 +16,7 @@ let rules=[]
 let intervalTime = 300
 
 //测试延迟网址
-let url = "http://www.apple.com/library/test/success.html"
+let url = "http://www.gstatic.com/generate_204"
 
 //需要代理的
 let proxy={
@@ -36,7 +36,7 @@ let automatic={
 let select={
     "name": "✅ 选择节点",
     "type": "select",
-    "proxies":["🈷️ 所有节点"]
+    "proxies":[]
 }
 //所有节点，方便测试连通
 let all={
@@ -185,21 +185,21 @@ module.exports.parse = async function(raw, {axios, yaml, notify,console},{ name,
     axios.defaults.headers.post['Content-Type'] = 'application/json;charset=UTF-8';
     axios.defaults.headers.post['Cache-Control'] = 'no-cache';
 
-    await axios.get("https://raw.githubusercontent.com/jimmylzt188/clash-parsers/main/areas.json").then(function (response){
+    await axios.get("https://gitee.com/jimmylzt/clash-parsers/raw/main/areas.json").then(function (response){
       areas=response.data;
     }).catch(function(error){
       notify("错误",error)
       console.log("areas错误",error);
     });
 
-    await axios.get("https://raw.githubusercontent.com/jimmylzt188/clash-parsers/main/rule_providers.yml").then(function (response){
+    await axios.get("https://gitee.com/jimmylzt/clash-parsers/raw/main/rule_providers.yml").then(function (response){
       rule_providers=response.data;
     }).catch(function(error){
       notify("错误",error)
       console.log("rule_providers错误",error);
     });
 
-    await axios.get("https://raw.githubusercontent.com/jimmylzt188/clash-parsers/main/rules.json").then(function (response){
+    await axios.get("https://gitee.com/jimmylzt/clash-parsers/raw/main/rules.json").then(function (response){
       rules=response.data;
     }).catch(function(error){
       notify("错误",error)
