@@ -3,77 +3,90 @@ rule-providers:
       type: http
       behavior: domain
       url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt
-      path: ./ruleset/reject.yaml
+      # path: ./ruleset/reject.yaml
+      path: ./rule/14119a17124afc9af939dee02c5e5bb7.yaml
       interval: 86400
     icloud:
       type: http
       behavior: domain
       url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt
-      path: ./ruleset/icloud.yaml
+      # path: ./ruleset/icloud.yaml
+      path: ./rule/8ec1ccd45ca854d0c7da0435368926f2.yaml
       interval: 86400
     apple:
       type: http
       behavior: domain
       url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt
-      path: ./ruleset/apple.yaml
+      # path: ./ruleset/apple.yaml
+      path: ./rule/7973bcff15457b586a235ce1e1aff416.yaml
       interval: 86400
     google:
       type: http
       behavior: domain
       url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/google.txt
-      path: ./ruleset/google.yaml
+      # path: ./ruleset/google.yaml
+      path: ./rule/5d00ae2bb8bed874f1bf570a5e03c96d.yaml
       interval: 86400
     proxy:
       type: http
       behavior: domain
       url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt
-      path: ./ruleset/proxy.yaml
+      # path: ./ruleset/proxy.yaml
+      path: ./rule/e612ea213b61ffbb86e1b693a8374f3c.yaml
       interval: 86400
     direct:
       type: http
       behavior: domain
       url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt
-      path: ./ruleset/direct.yaml
+      # path: ./ruleset/direct.yaml
+      path: ./rule/d0c14b6e78b7fdf6b5e052bba12f3c23.yaml
       interval: 86400
     private:
       type: http
       behavior: domain
       url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt
-      path: ./ruleset/private.yaml
+      # path: ./ruleset/private.yaml
+      path: ./rule/625744c0d0649f6dbef0c28441220a9d.yaml
       interval: 86400
     gfw:
       type: http
       behavior: domain
       url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt
-      path: ./ruleset/gfw.yaml
+      # path: ./ruleset/gfw.yaml
+      path: ./rule/ee6791ce50b77608a6ea7150a4a7bb06.yaml
       interval: 86400
     greatfire:
       type: http
       behavior: domain
       url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/greatfire.txt
-      path: ./ruleset/greatfire.yaml
+      # path: ./ruleset/greatfire.yaml
+      path: ./rule/1198920a444ee55f5945d796e1d56581.yaml
       interval: 86400
     tld-not-cn:
       type: http
       behavior: domain
       url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt
-      path: ./ruleset/tld-not-cn.yaml
+      # path: ./ruleset/tld-not-cn.yaml
+      path: ./rule/1d6696a4cfc9586c72e6d20b5f338820.yaml
       interval: 86400
     telegramcidr:
       type: http
       behavior: ipcidr
       url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt
-      path: ./ruleset/telegramcidr.yaml
+      # path: ./ruleset/telegramcidr.yaml
+      path: ./rule/efa90433479cee1d3f966131b367a760.yaml
       interval: 86400
     cncidr:
       type: http
       behavior: ipcidr
       url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt
-      path: ./ruleset/cncidr.yaml
+      # path: ./ruleset/cncidr.yaml
+      path: ./rule/0d24eec708295904dd7450a5f127c260.yaml
       interval: 86400
     lancidr:
       type: http
       behavior: ipcidr
       url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt
-      path: ./ruleset/lancidr.yaml
+      # path: ./ruleset/lancidr.yaml
+      path: ./rule/e42b2ca279a0fae349269f9f64f27b37.yaml
       interval: 86400
