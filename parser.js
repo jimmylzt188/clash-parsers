@@ -20,13 +20,13 @@ let url = "http://www.gstatic.com/generate_204"
 
 //需要代理的
 let proxy={
-  "name": "🪜 代理",
+  "name": "🔰国外流量",
   "type": "select",
-  "proxies":["♻️ 自动选择","✅ 选择节点","🛑 全球拦截"]
+  "proxies":["♻️自动选择","✅手动选择","🛑全球拦截"]
 }
 //自动选择
 let automatic={
-    "name": "♻️ 自动选择",
+    "name": "♻️自动选择",
     "type": "url-test",
     "url": url,
     "interval": intervalTime,//更新周期
@@ -34,19 +34,19 @@ let automatic={
 }
 //选择节点
 let select={
-    "name": "✅ 选择节点",
+    "name": "✅手动选择",
     "type": "select",
     "proxies":[]
 }
 //所有节点，方便测试连通
 let all={
-    "name": "🈷️ 所有节点",
+    "name": "🈷️所有节点",
     "type": "select",
     "proxies":[]
 }
 //故障转移
 let fallback={
-    "name": "🔯 故障转移",
+    "name": "🔯故障转移",
     "type": "fallback",
     "url": url,
     "interval": 300,
@@ -54,64 +54,64 @@ let fallback={
 }
 //直连
 let direct={
-    "name": "🌏 全球直连",
+    "name": "🌏全球直连",
     "type": "select",
-    "proxies":["DIRECT","🪜 代理","♻️ 自动选择","✅ 选择节点"]
+    "proxies":["DIRECT","🔰国外流量","♻️自动选择","✅手动选择"]
 }
 //阻止链接
 let prevent={
-    "name": "🛑 全球拦截",
+    "name": "🛑全球拦截",
     "type": "select",
     "proxies":["REJECT", "DIRECT"]
 }
 //私有网络
 let privateNetwork={
-  "name": "⛓️ 私有网络",
+  "name": "⛓️私有网络",
   "type": "select",
-  "proxies":["DIRECT","♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
+  "proxies":["DIRECT","♻️自动选择","✅手动选择","REJECT", "DIRECT"]
 }
 //icloud
 let icloud={
-  "name": "☁️ Icloud",
+  "name": "☁️Icloud",
   "type": "select",
-  "proxies":["🪜 代理","♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
+  "proxies":["🔰国外流量","♻️自动选择","✅手动选择","REJECT", "DIRECT"]
 }
 //apple
 let apple={
-  "name": "📱 Apple",
+  "name": "📱Apple",
   "type": "select",
-  "proxies":["🪜 代理","♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
+  "proxies":["🔰国外流量","♻️自动选择","✅手动选择","REJECT", "DIRECT"]
 }
 //google
 let google={
-  "name": "📫 Google",
+  "name": "📫Google",
   "type": "select",
-  "proxies":["🪜 代理","♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
+  "proxies":["🔰国外流量","♻️自动选择","✅手动选择","REJECT", "DIRECT"]
 }
 
 //telegram
 let telegram={
-  "name": "📲 Telegram",
+  "name": "📲Telegram",
   "type": "select",
-  "proxies":["🪜 代理","♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
+  "proxies":["🔰国外流量","♻️自动选择","✅手动选择","REJECT", "DIRECT"]
 }
 //youtube
 let youtube={
-  "name": "📺 Youtube",
+  "name": "📺Youtube",
   "type": "select",
-  "proxies":["🪜 代理","♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
+  "proxies":["🔰国外流量","♻️自动选择","✅手动选择","🌏全球直连","🛑全球拦截"]
 }
 //微软
 let microsoft={
-  "name": "Ⓜ️ 微软服务",
+  "name": "Ⓜ️微软服务",
   "type": "select",
-  "proxies":["🪜 代理","♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
+  "proxies":["🔰国外流量","♻️自动选择","✅手动选择","🌏全球直连","🛑全球拦截"]
 }
 //其他没命中的
 let others={
-  "name": "🐟 未命中规则",
+  "name": "🐟未命中规则",
   "type": "select",
-  "proxies":["🪜 代理","♻️ 自动选择","✅ 选择节点","🌏 全球直连","🛑 全球拦截"]
+  "proxies":["🔰国外流量","♻️自动选择","✅手动选择","🌏全球直连","🛑全球拦截"]
 }
 
 //内置代理规则
@@ -185,21 +185,21 @@ module.exports.parse = async function(raw, {axios, yaml, notify,console},{ name,
     axios.defaults.headers.post['Content-Type'] = 'application/json;charset=UTF-8';
     axios.defaults.headers.post['Cache-Control'] = 'no-cache';
 
-    await axios.get("https://gitee.com/jimmylzt/clash-parsers/raw/main/areas.json").then(function (response){
+    await axios.get("https://raw.githubusercontent.com/jimmylzt188/clash-parsers/main/areas.json").then(function (response){
       areas=response.data;
     }).catch(function(error){
       notify("错误",error)
       console.log("areas错误",error);
     });
 
-    await axios.get("https://gitee.com/jimmylzt/clash-parsers/raw/main/rule_providers.yml").then(function (response){
+    await axios.get("https://raw.githubusercontent.com/jimmylzt188/clash-parsers/main/rule_providers.yml").then(function (response){
       rule_providers=response.data;
     }).catch(function(error){
       notify("错误",error)
       console.log("rule_providers错误",error);
     });
 
-    await axios.get("https://gitee.com/jimmylzt/clash-parsers/raw/main/rules.json").then(function (response){
+    await axios.get("https://raw.githubusercontent.com/jimmylzt188/clash-parsers/main/rules.json").then(function (response){
       rules=response.data;
     }).catch(function(error){
       notify("错误",error)
