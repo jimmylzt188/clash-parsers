@@ -22,7 +22,7 @@ let url = "http://www.gstatic.com/generate_204"
 let proxy={
   "name": "🔰国外流量",
   "type": "select",
-  "proxies":["♻️自动选择","✅手动选择","REJECT"]
+  "proxies":["♻️自动选择","✅手动选择","DIRECT"]
 }
 //自动选择
 let automatic={
