@@ -22,7 +22,7 @@ let url = "http://www.gstatic.com/generate_204"
 let proxy={
   "name": "🔰国外流量",
   "type": "select",
-  "proxies":["♻️自动选择","✅手动选择","🛑全球拦截"]
+  "proxies":["♻️自动选择","✅手动选择","REJECT"]
 }
 //自动选择
 let automatic={
@@ -99,19 +99,19 @@ let telegram={
 let youtube={
   "name": "📺Youtube",
   "type": "select",
-  "proxies":["🔰国外流量","♻️自动选择","✅手动选择","🌏全球直连","🛑全球拦截"]
+  "proxies":["🔰国外流量","♻️自动选择","✅手动选择","REJECT", "DIRECT"]
 }
 //微软
 let microsoft={
   "name": "Ⓜ️微软服务",
   "type": "select",
-  "proxies":["🔰国外流量","♻️自动选择","✅手动选择","🌏全球直连","🛑全球拦截"]
+  "proxies":["🔰国外流量","♻️自动选择","✅手动选择","REJECT", "DIRECT"]
 }
 //其他没命中的
 let others={
   "name": "🐟未命中规则",
   "type": "select",
-  "proxies":["🔰国外流量","♻️自动选择","✅手动选择","🌏全球直连","🛑全球拦截"]
+  "proxies":["🔰国外流量","♻️自动选择","✅手动选择","REJECT", "DIRECT"]
 }
 
 //内置代理规则
